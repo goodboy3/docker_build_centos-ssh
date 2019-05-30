@@ -1,0 +1,22 @@
+安装scala
+wget https://downloads.lightbend.com/scala/2.12.7/scala-2.12.7.tgz
+
+解压、重命名、移动
+tar -zxvf scala-2.12.7.tgz
+mv scala-2.12.7 scala
+mv scala /usr/local/share
+
+环境变量
+vim /etc/profile
+export SCALA_HOME=/usr/local/share/scala
+export PATH=$PATH:$SCALA_HOME/bin
+
+执行配置文件 
+source /etc/profile
+
+验证
+scala -version
+
+Scala code runner version 2.12.7 -- Copyright 2002-2018, LAMP/EPFL and Lightbend, Inc.
+
+

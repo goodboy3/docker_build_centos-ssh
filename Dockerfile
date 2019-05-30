@@ -30,3 +30,8 @@ RUN echo "root:123456"|chpasswd
 EXPOSE 22
 #运行脚本，启动sshd服务
 CMD ["/usr/local/sbin/run.sh"]
+
+#安装java
+RUN yum install java-1.8.0-openjdk* -y
+#安装wget
+RUN yum install wget -y
